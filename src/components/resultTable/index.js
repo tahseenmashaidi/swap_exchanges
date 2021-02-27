@@ -10,7 +10,7 @@ const ResultTable = ({data,uniSwapData}) => {
     const renderCell=(data)=>{
         return <Cell>{data}</Cell>
     }
-   return  <Table numRows={2}>
+   return  <Table numRows={1}>
        <Column name={"From Token Name"} cellRenderer={(idx)=>renderCell(data.fromToken.name)} />
        <Column  name={"From Token Symbol"} cellRenderer={(idx)=>renderCell(data.fromToken.symbol)}/>
        <Column  name={"From Token Amount"} cellRenderer={(idx)=>renderCell(data.fromTokenAmount)}/>
